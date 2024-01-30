@@ -70,7 +70,7 @@ jobs:
           python -m build
 
       - name: Set up Docker
-        uses: docker/setup-docker@v2.2.1
+        uses: docker/setup-docker@v2.7.0
   
       - name: Log in to Docker Hub
         run: docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_PASSWORD }}
