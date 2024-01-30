@@ -42,7 +42,7 @@ jobs:
             python3 -m pip install pytest
             pytest
 
-  build-and-package:
+  build-package-and-containerize:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
